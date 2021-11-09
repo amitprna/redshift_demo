@@ -1,5 +1,5 @@
 Test_Case,Query
-null_check,sel * from table 1
-dup check,sel * from table 2
-hist check,sel 1 from table 3
-count check,sel * from table 4
+category_check,select count(*) from category
+employee_check,select count(*) from employee
+users_check,select count(*) from users
+venue_check,select count(*) from venue
