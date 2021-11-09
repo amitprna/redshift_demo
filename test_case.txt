@@ -1,14 +1,5 @@
-Province,Abbreviation
-Alberta,AB
-British Columbia,BC
-Manitoba,MB
-New Brunswick,MB
-Newfoundland and Labrador,NL
-Northwest Territories,NT
-Nova Scotia,NS
-Nunavut,NU
-Ontario,ON
-Prince Edward Island,PE
-Quebec,QC
-Saskatchewan,SK
-Yukmo,YT
+Test_Case,Query
+null_check,sel * from table 1
+dup check,sel * from table 2
+hist check ,sel 1 from table 3
+count,sel * from from table 4
