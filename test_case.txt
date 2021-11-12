@@ -1,5 +1,5 @@
-Test_Case,Query
-category_check,select count(*) from category
-employee_check,select count(*) from employee
-users_check,select count(*) from users
-venue_check,select count(*) from venue
+Test_Case,Query,Expected_Result
+category_check,select count(*) from category,0
+employee_check,select count(*) from employee,3
+users_check,select count(*) from users,49990
+venue_check,select count(*) from venue,202
