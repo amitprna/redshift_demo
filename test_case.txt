@@ -1,5 +1,5 @@
 Test_Case,Query,Expected_Result
-category_check,select count(*) from category,0
+verify data is present,select CASE WHEN t.CNT <> '0' THEN 'PASS' ELSE 'FAIL' END AS VAL  FROM(select COUNT(*) CNT from employee) t;,PASS
 employee_check,select count(*) from employee,3
 users_check,select count(*) from users,49990
 venue_check,select count(*) from venue,202
