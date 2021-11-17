@@ -1,5 +1,5 @@
 Test_Case_desc,Query,Expected_Result
 verify data is present,select count(*) from category;,11	
-verify there is no null data,select count(*) from (select catname,count(catname) from category  group by 1 having count(catname)>1);,0
-verify we have only 3 catgroup,select count(*) from users;,3
-catid for nba should be 3,select catid from category where catname ='NBA';,4
+verify there is no null data,select count(*) from (select catname,count(catname) from category  group by 1 having count(catname)>1),0
+verify we have only 3 catgroup,select count(*) from users,3
+max catid should be 12,select max(catid) from category ;,12
