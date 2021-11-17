@@ -1,4 +1,4 @@
-Test_Case_desc,Query,Expected_Result
-verify data is present,select count(*) from users;,49990	
-verify there is no null data,select count(*) from (select catname,count(catname) from category  group by 1 having count(catname)>1);,0
-verify no null username,SELECT count(username) FROM users WHERE username IS NULL;,0
+Test_Case_desc|Query|Expected_Result
+verify data is present|select count(*) from users;|49990	
+verify there is no null data|select count(*) from (select catname,count(catname) from category  group by 1 having count(catname)>1);|0
+verify no null username|SELECT count(username) FROM users WHERE username IS NULL;|0
